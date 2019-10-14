@@ -17,7 +17,7 @@ To get started using a persephony account, follow the instructions [here](https:
    | ACCOUNT_ID   | Account ID which can be found under [API Keys](https://www.persephony.com/dashboard/portal/account/authentication) in Dashboard           |
    | AUTH_TOKEN   | Authentication Token which can be found under [API Keys](https://www.persephony.com/dashboard/portal/account/authentication) in Dashboard |
 
-2. Provide a value for the variable `queueId` which is a queue Id in updateAQueue.js. You can learn more about queues [here](https://docs.persephony.com/reference/call-queues)
+2. Provide a value for the variable `queueId` which is a queue Id in UpdateAQueue.java. You can learn more about queues [here](https://docs.persephony.com/reference/call-queues)
 
 ## Building and Runnning the Tutorial
 
