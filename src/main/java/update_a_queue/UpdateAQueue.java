@@ -10,7 +10,8 @@ public class UpdateAQueue {
   public static void main(String[] args) {
     String accountId = System.getenv("ACCOUNT_ID");
     String authToken = System.getenv("AUTH_TOKEN");
-    String queueId = "QU4fe17b9d24c35cc45479e37ab89605a88968a373";
+    // TODO: Provide queueId
+    String queueId = "";
 
     updateAQueue(queueId, accountId, authToken);
   }
