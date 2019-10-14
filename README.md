@@ -2,7 +2,7 @@
 
 This project serves as a guide to help you build an application with Persephony. Specifically, the project will:
 
-- Updates the options of a call queue   
+- Updates the options of a call queue
 
 ## Setting up your new app within your Persephony account
 
@@ -12,10 +12,10 @@ To get started using a persephony account, follow the instructions [here](https:
 
 1. Configure environment variables.
 
-   | ENV VARIABLE            | DESCRIPTION                                                                                                                                                                             |
-   | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | ACCOUNT_ID              | Account ID which can be found under [API Keys](https://www.persephony.com/dashboard/portal/account/authentication) in Dashboard                                                         |
-   | AUTH_TOKEN              | Authentication Token which can be found under [API Keys](https://www.persephony.com/dashboard/portal/account/authentication) in Dashboard                                               |
+   | ENV VARIABLE | DESCRIPTION                                                                                                                               |
+   | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+   | ACCOUNT_ID   | Account ID which can be found under [API Keys](https://www.persephony.com/dashboard/portal/account/authentication) in Dashboard           |
+   | AUTH_TOKEN   | Authentication Token which can be found under [API Keys](https://www.persephony.com/dashboard/portal/account/authentication) in Dashboard |
 
 2. Provide a value for the variable `queueId` which is a queue Id in updateAQueue.js. You can learn more about queues [here](https://docs.persephony.com/reference/call-queues)
 
