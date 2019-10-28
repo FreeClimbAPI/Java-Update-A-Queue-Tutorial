@@ -1,9 +1,9 @@
 package main.java.update_a_queue;
 
-import com.vailsys.persephony.api.PersyClient;
-import com.vailsys.persephony.api.PersyException;
-import com.vailsys.persephony.api.queue.Queue;
-import com.vailsys.persephony.api.queue.QueueUpdateOptions;
+import com.vailsys.freeclimb.api.FreeClimbClient;
+import com.vailsys.freeclimb.api.FreeClimbException;
+import com.vailsys.freeclimb.api.queue.Queue;
+import com.vailsys.freeclimb.api.queue.QueueUpdateOptions;
 
 public class UpdateAQueue {
 
@@ -18,8 +18,8 @@ public class UpdateAQueue {
 
   public static void updateAQueue(String queueId, String accountId, String authToken) {
     try {
-      // Create PersyClient object
-      PersyClient client = new PersyClient(accountId, authToken);
+      // Create FreeClimbClient object
+      FreeClimbClient client = new FreeClimbClient(accountId, authToken);
 
       // Options payload to change the alias and payload of the specified queue
       QueueUpdateOptions options = new QueueUpdateOptions();
@@ -29,7 +29,7 @@ public class UpdateAQueue {
       // Invoke update method to modify the queue
       Queue queue = client.queues.update(queueId, options);
 
-    } catch (PersyException e) {
+    } catch (FreeClimbException e) {
       // Exception throw upon failure
     }
   }
