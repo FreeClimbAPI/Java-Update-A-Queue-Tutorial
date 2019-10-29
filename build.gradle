@@ -26,8 +26,7 @@ targetCompatibility = 1.8
 
 dependencies {
     testCompile "junit:junit"
-    // TODO: replace with new reference to JitPack (EX: compile 'com.github.PersephonyAPI:java-sdk:1.0.0')
-    compile project(':java-sdk')
+    compile 'com.github.PersephonyAPI:FreeClimb-Java-SDK:1.0.0'
 }
 
 sourceSets {
