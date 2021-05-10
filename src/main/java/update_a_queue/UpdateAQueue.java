@@ -9,16 +9,16 @@ public class UpdateAQueue {
 
   public static void main(String[] args) {
     String accountId = System.getenv("ACCOUNT_ID");
-    String authToken = System.getenv("AUTH_TOKEN");
+    String apiKey = System.getenv("API_KEY");
     String queueId = ""; // Provide QUEUE_ID
 
-    updateAQueue(queueId, accountId, authToken);
+    updateAQueue(queueId, accountId, apiKey);
   }
 
-  public static void updateAQueue(String queueId, String accountId, String authToken) {
+  public static void updateAQueue(String queueId, String accountId, String apiKey) {
     try {
       // Create FreeClimbClient object
-      FreeClimbClient client = new FreeClimbClient(accountId, authToken);
+      FreeClimbClient client = new FreeClimbClient(accountId, apiKey);
 
       // Options payload to change the alias and payload of the specified queue
       QueueUpdateOptions options = new QueueUpdateOptions();
